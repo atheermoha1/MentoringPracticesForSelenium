@@ -1,4 +1,4 @@
-package tests.day3;
+package tests.day03;
 
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
