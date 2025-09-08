@@ -1,4 +1,4 @@
-package tests;
+package tests.day02;
 // Go to YouTube homepage
 // Do the following tasks by creating 4 different test methods. 
 // Print "Test is running" before each test() method

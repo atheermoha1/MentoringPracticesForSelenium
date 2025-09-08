@@ -1,4 +1,4 @@
-package tests.day03;
+package tests.day04;
 
 public class T07ComplexFormAutomation {
     /*
