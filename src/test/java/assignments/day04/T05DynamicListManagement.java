@@ -32,7 +32,7 @@ public class T05DynamicListManagement {
         Faker faker = new Faker();
         WebElement inputBox = driver.findElement(By.xpath("//input[@type='text']"));
         for (int i = 0; i < 5; i++) {
-            String task = faker.lorem().word();
+            String task = faker.job().title();
             inputBox.sendKeys(task,Keys.ENTER);
         }
         // mark every other task as completed
