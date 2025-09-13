@@ -1,4 +1,4 @@
-package assignments.day06;
+package assignments.day07;
 
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;

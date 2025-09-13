@@ -1,4 +1,4 @@
-package assignments.day06;
+package assignments.day07;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -6,8 +6,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import utilities.TestBase;
-
-import java.util.List;
 
 public class T02_Action extends TestBase {
     /*

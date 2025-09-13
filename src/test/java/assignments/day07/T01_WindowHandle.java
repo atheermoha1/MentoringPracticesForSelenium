@@ -1,12 +1,9 @@
-package assignments.day06;
+package assignments.day07;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import utilities.TestBase;
-
-import java.time.Duration;
 
 public class T01_WindowHandle extends TestBase {
     /*
