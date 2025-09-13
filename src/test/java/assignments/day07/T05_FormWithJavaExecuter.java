@@ -55,6 +55,9 @@ Celebrate the login!
     flash(Username);
     Username.sendKeys(username);
 
+    flash(Email);
+    Email.sendKeys(email);
+
     flash(Password);
     Password.sendKeys(password);
 
