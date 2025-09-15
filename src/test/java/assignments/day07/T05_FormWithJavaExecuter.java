@@ -22,6 +22,7 @@ Celebrate the login!
     void test1() throws InterruptedException {
     driver.get(url);
     Faker faker= new Faker();
+    String ssn=faker.idNumber().ssnValid();
     String firstName= faker.name().firstName();
     String lastName= faker.name().lastName();
     String address= faker.address().fullAddress();
@@ -30,6 +31,7 @@ Celebrate the login!
     String email= faker.internet().emailAddress();
     String password= faker.internet().password();
 
+    WebElement SSN= driver.findElement(By.id("ssn"));
     WebElement FirstName= driver.findElement(By.id("first-name"));
     WebElement LastName= driver.findElement(By.id("last-name"));
     WebElement Address= driver.findElement(By.id("address"));
@@ -39,6 +41,9 @@ Celebrate the login!
     WebElement Password= driver.findElement(By.id("password"));
     WebElement PasswordConfirmation= driver.findElement(By.id("confirm-password"));
     WebElement register= driver.findElement(By.className("button"));
+
+    flash(SSN);
+    SSN.sendKeys(ssn);
 
     flash(FirstName);
     FirstName.sendKeys(firstName);
