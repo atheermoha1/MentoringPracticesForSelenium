@@ -59,12 +59,6 @@ String url = "https://claruswaysda.github.io/submit-button.html";
         Assertions.assertTrue(driver.findElement(By.id("hoverSuccessMessage")).isDisplayed());
 
 
-//        // Verify success messages
-//        List<WebElement> successMessages = driver.findElements(By.className("message"));
-//        for (WebElement message : successMessages) {
-//            System.out.println("messages = " + message.getText());
-//            Assertions.assertTrue(message.isDisplayed());
-//
-//        }
+
     }
 }
