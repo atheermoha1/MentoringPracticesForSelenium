@@ -34,7 +34,7 @@ table by taking data (Name, Age, Country) from Excel.
        FileInputStream fis = new FileInputStream(Path.of(".", "resources", "Task01.xlsx").toString());
        Workbook workbook = WorkbookFactory.create(fis);
 
-       //open sheet
+       //open first sheet
        Sheet sheet= workbook.getSheetAt(0);
 
 
