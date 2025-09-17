@@ -2,6 +2,7 @@ package tests.day08;
 
 import com.github.javafaker.Faker;
 import com.github.javafaker.File;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -70,10 +71,10 @@ Capture a screenshot of the page with confetti.
 
         //Take screenshot
         // Create folder if not exists
-        Path folder = Path.of(System.getProperty("user.home"), "Desktop", "Screenshots");
-        if (!folder.toFile().exists()) folder.toFile().mkdirs();
-
-        String timeStamp = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd_HH-mm-ss"));
+        WebElement mussg = driver.findElement(By.xpath("//div[@id='successMessage']"));
+        Assertions.assertTrue(mussg.isEnabled());
+        WebElement loginusername = driver.findElement(By.xpath("//button[@class='login-button']"));
+        loginusername.click();
 
 
 
