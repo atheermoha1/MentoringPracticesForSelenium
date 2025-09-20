@@ -36,8 +36,6 @@ When: In the grade column, write the letter grades (A, B, C, D, F) based on the 
             String stdGrade = Grade(grade);
             r1c1.setCellValue((stdGrade));
 
-
-
         if (name.equals("Alice")) {
              aliceGrade = stdGrade;
         }
